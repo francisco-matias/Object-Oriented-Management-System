@@ -1,4 +1,4 @@
-# Stochastic Graph Optimization Simulator
+# Stochastic Graph Simulator
 
 A Java-based discrete-event simulation framework for solving complex graph optimization problems using probabilistic metaheuristics and adaptive search strategies.
 
