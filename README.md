@@ -1,25 +1,83 @@
-# Object-Oriented-Management-System
-Java Application - Advanced OOP Project
+# Stochastic Graph Optimization Simulator
 
-# Overview
+A Java-based discrete-event simulation framework for solving complex graph optimization problems using probabilistic metaheuristics and adaptive search strategies.
 
-This project consists of the development of a modular object-oriented management system implemented in Java. The application models a structured domain using well-defined class hierarchies and enforces strict business rules through encapsulation, controlled state transitions, and custom exception handling. The goal was to design a maintainable and extensible system architecture following solid object-oriented design principles.
+---
 
-# Features
+## Overview
 
-- Hierarchical domain modelling
-- Inheritance and polymorphism
-- Encapsulation and abstraction
+This project implements a stochastic simulation engine capable of approximating solutions to NP-hard graph optimization problems.  
+
+The system models weighted graphs and autonomous agents that evolve over time according to probabilistic movement rules, dynamic state updates, and adaptive reinforcement mechanisms.
+
+The simulation is driven by discrete stochastic events and maintains continuous tracking of the best candidate solutions discovered throughout execution.
+
+---
+
+## Core Concepts
+
+- Weighted graph modelling
+- Hamiltonian cycle evaluation
+- Probabilistic decision-making
+- Exponential time distributions
+- Discrete-event stochastic simulation
+- Adaptive search mechanisms
+- Modular object-oriented system design
+- Command-line execution and input-driven configuration
+
+---
+
+## Architecture
+
+The system follows a layered modular structure:
+
+### Domain Layer
+- Graph representation
+- Agent behaviour modelling
+- Solution evaluation logic
+- State validation and constraint enforcement
+
+### Simulation Engine
+- Event scheduling
+- Time progression management
+- Stochastic event processing
+- Dynamic state updates
+
+### Interface Layer
+- Command-line parameter parsing
+- Random graph generation
+- File-based configuration loading
+- Structured output formatting
+
+Clear separation of concerns ensures maintainability, extensibility, and controlled system evolution.
+
+---
+
+## Execution
+
+The application runs as an executable JAR file and supports:
+
+- Random graph generation with configurable parameters
+- File-based simulation input
+- Periodic system observation reporting
+- Automatic tracking of best candidate solutions
+
+---
+
+## Technical Highlights
+
+- Advanced object-oriented modelling
+- Encapsulation of domain invariants
 - Custom exception handling
-- Persistent state management
-- Separation between core logic and user interface
+- Deterministic structure over stochastic processes
+- Modular architecture with clean responsibility boundaries
 
-# Architeture
+---
 
-The system is organized into:
+## Technologies
 
- - Core layer: Domain model and business logic
- - UI layer: Command-based user interaction
- - Persistence layer: Data serialization and state recovery
+- Java
+- Object-Oriented Design
+- Discrete Event Simulation
+- Algorithmic Optimization
 
-This separation ensures modularity, maintainability and extensibility.
