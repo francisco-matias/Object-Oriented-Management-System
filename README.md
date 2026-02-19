@@ -6,78 +6,63 @@ A Java-based discrete-event simulation framework for solving complex graph optim
 
 ## Overview
 
-This project implements a stochastic simulation engine capable of approximating solutions to NP-hard graph optimization problems.  
+This project implements a stochastic simulation engine designed to approximate solutions to NP-hard graph optimization problems.
 
-The system models weighted graphs and autonomous agents that evolve over time according to probabilistic movement rules, dynamic state updates, and adaptive reinforcement mechanisms.
+The system models weighted graphs and autonomous agents that evolve over time according to probabilistic movement rules, exponential time distributions, and adaptive reinforcement mechanisms.  
 
-The simulation is driven by discrete stochastic events and maintains continuous tracking of the best candidate solutions discovered throughout execution.
+Simulation progresses through discrete stochastic events while continuously tracking the best candidate solutions discovered during execution.
 
 ---
 
-## Core Concepts
+## System Design
 
-- Weighted graph modelling
+The application follows a modular layered structure separating domain logic, simulation mechanics, and execution control.
+
+### Domain Model
+- Weighted graph representation
 - Hamiltonian cycle evaluation
-- Probabilistic decision-making
-- Exponential time distributions
-- Discrete-event stochastic simulation
-- Adaptive search mechanisms
-- Modular object-oriented system design
-- Command-line execution and input-driven configuration
-
----
-
-## Architecture
-
-The system follows a layered modular structure:
-
-### Domain Layer
-- Graph representation
 - Agent behaviour modelling
-- Solution evaluation logic
-- State validation and constraint enforcement
+- Constraint enforcement and state validation
 
-### Simulation Engine
+### Simulation Core
 - Event scheduling
 - Time progression management
 - Stochastic event processing
-- Dynamic state updates
+- Adaptive state updates
 
-### Interface Layer
+### Execution Layer
 - Command-line parameter parsing
 - Random graph generation
 - File-based configuration loading
-- Structured output formatting
+- Structured output reporting
 
-Clear separation of concerns ensures maintainability, extensibility, and controlled system evolution.
-
----
-
-## Execution
-
-The application runs as an executable JAR file and supports:
-
-- Random graph generation with configurable parameters
-- File-based simulation input
-- Periodic system observation reporting
-- Automatic tracking of best candidate solutions
+Clear separation of responsibilities ensures extensibility, maintainability, and controlled state evolution within a stochastic environment.
 
 ---
 
-## Technical Highlights
-
-- Advanced object-oriented modelling
-- Encapsulation of domain invariants
-- Custom exception handling
-- Deterministic structure over stochastic processes
-- Modular architecture with clean responsibility boundaries
-
----
-
-## Technologies
+## Technical Scope
 
 - Java
 - Object-Oriented Design
 - Discrete Event Simulation
-- Algorithmic Optimization
+- Probabilistic Modelling
+- Graph Optimization
+- Modular System Architecture
+
+---
+
+## Architectural Design (UML)
+
+The system architecture reflects a structured object-oriented design with explicit ownership of state transitions and clear interaction boundaries between components.
+
+The UML diagram illustrates:
+
+- Core domain entities and their relationships  
+- Encapsulation of graph and agent behaviour  
+- Interaction between event scheduling and state evolution  
+- Separation between simulation engine and optimization logic  
+
+The design emphasizes modularity, controlled mutation of shared state, and extensibility for alternative search strategies or simulation policies.
+
+![UML Diagram]()
 
