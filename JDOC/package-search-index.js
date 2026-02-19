@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"aco"},{"l":"aco.ex"},{"l":"All Packages","u":"allpackages-index.html"},{"l":"graph"},{"l":"graph.ex"},{"l":"math"},{"l":"sim"}];updateSearchResults();
