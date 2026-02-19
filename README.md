@@ -64,5 +64,5 @@ The UML diagram illustrates:
 
 The design emphasizes modularity, controlled mutation of shared state, and extensibility for alternative search strategies or simulation policies.
 
-![UML Diagram]()
+![UML Diagram](https://raw.githubusercontent.com/francisco-matias/Stochastic-Graph-Simulator/6da9ded6106b6381767b870a71fb6947d92f1214/UML.pdf)
 
